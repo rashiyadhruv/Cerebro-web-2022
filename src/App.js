@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import AuthContext, { AuthContextProvider } from "./store/AuthContext";
 import Login from "./containers/Login/Login";
 import Signup from "./containers/Signup/Signup";
-import HeroInitial from "./components/Hero-Initial/Hero-Initial";
+import Hero from "./containers/Hero/Hero";
 import "./App.css";
 
 import FAQs from "./containers/FAQs/FAQs";
@@ -18,20 +18,22 @@ function App() {
     <div className="App">
       <AuthContextProvider>
         <BrowserRouter>
-
+        <Routes>
+          
+        </Routes>
 <MainLayout status="hoer">
           <Routes>
             <Route
               path="/"
               element={
                 <>
-                // Temp navigation for deploy preview
+                {/* // Temp navigation for deploy preview */}
                 {/* <div>
                   <Link to="/login">Login</Link>
                   <br />
                   <Link to="signup">Signup</Link>
                 </div> */}
-                 <HeroInitial />
+                 < Hero/>
                  </> 
               }
             />

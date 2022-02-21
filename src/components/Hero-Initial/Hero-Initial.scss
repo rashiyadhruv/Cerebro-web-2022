@@ -6,6 +6,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    animation: fade-out 1s ease-out 4s forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -21,7 +31,7 @@
 
 .cerebro-logo{
     margin-bottom: 7%;
-    animation: hovering 3s ease-in-out;
+    animation: hovering 2s ease-in-out;
     animation-iteration-count: 2;
 }
 
@@ -30,7 +40,7 @@
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
     100%{
         transform: translateY(0px);
@@ -51,3 +61,4 @@
     }
 }
     
+
